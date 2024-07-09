@@ -1,7 +1,8 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { useState } from "react";
- 
-export const SimpleButton: () => JSX.Element = () => {
+
+export const SimpleButton = () => {
   const [state, setState] = useState(false);
   const handleClick = () => {
     setState((prevState) => !prevState);
