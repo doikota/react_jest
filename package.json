@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "test": "jest"
   },
-  "jest":{
+  "jest": {
     "testEnvironment": "jsdom"
   },
   "dependencies": {
