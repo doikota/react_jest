@@ -16,12 +16,23 @@ npm install --save-dev @babel/preset-react
 npm install --save-dev @babel/preset-env
 npm install --save-dev jest-environment-jsdom
 
+```
 ++ .babelrc
 {
-"presets": ["@babel/preset-react", ["@babel/preset-env", { "targets": { "node": "current" } }]]
+  "presets": ["@babel/preset-react", ["@babel/preset-env", { "targets": { "node": "current" } }]]
 }
+```
 
-- package.json
-  "jest":{
+```
+++ package.json
+"jest":{
   "testEnvironment": "jsdom"
-  },
+},
+```
+
+```
+++ .eslintrc.cjs
+rules: {
+  'react/jsx-uses-react': [1],
+},
+```
