@@ -1,12 +1,10 @@
-# React + Vite
+# React プロジェクトで jest と SonarQube を使います。
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React プロジェクトで jest と SonarQube を使う最小サンプルです。
 
-Currently, two official plugins are available:
+必要なライブラリ群：
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
+```
 npm install --save-dev @testing-library/react
 npm install --save-dev @testing-library/jest-dom
 npm install --save-dev @testing-library/user-event
@@ -15,6 +13,9 @@ npm install --save-dev jest
 npm install --save-dev @babel/preset-react
 npm install --save-dev @babel/preset-env
 npm install --save-dev jest-environment-jsdom
+```
+
+.babelrc を新規作成
 
 ```
 ++ .babelrc
@@ -23,12 +24,16 @@ npm install --save-dev jest-environment-jsdom
 }
 ```
 
+package.json に以下を追記（場所は適当に）
+
 ```
 ++ package.json
 "jest":{
   "testEnvironment": "jsdom"
 },
 ```
+
+.eslintrc.cjs に以下を追記（env や rules が既にあれば末尾に追加）
 
 ```
 ++ .eslintrc.cjs
@@ -39,6 +44,10 @@ rules: {
 },
 ```
 
+コマンド実行
+
+```
 npm test -- --coverage
-eslint \*_/_.js\* -f json -o report.json
+eslint **/*.js* -f json -o report.json
 sonar-scanner
+```
