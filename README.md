@@ -38,3 +38,7 @@ rules: {
   'react/jsx-uses-react': [1],
 },
 ```
+
+npm test -- --coverage
+eslint \*_/_.js\* -f json -o report.json
+sonar-scanner

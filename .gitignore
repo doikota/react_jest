@@ -27,3 +27,8 @@ dist-ssr
 # Jest
 __snapshots__
 
+# SonarQube
+report.json
+coverage
+.scannerwork/
+sonar-project.properties
