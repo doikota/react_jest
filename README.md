@@ -1,6 +1,6 @@
 # React プロジェクトで jest と SonarQube を使います。
 
-React プロジェクトで jest と SonarQube を使う最小サンプルです。
+React プロジェクトで Jest と SonarQube を使う最小サンプルです。
 
 必要なライブラリ群：
 
@@ -47,6 +47,7 @@ rules: {
 コマンド実行
 
 ```
+npm test -- -u
 npm test -- --coverage
 eslint **/*.js* -f json -o report.json
 sonar-scanner
