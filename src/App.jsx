@@ -13,8 +13,10 @@ export const App = () => {
   return (
     <React.StrictMode>
       <Header />
+      {/* SimpleButtonはstateをAppで同時制御 */}
       <SimpleButton name="電源" state={state} handleClick={handleClick} />
       <SimpleButton name="Switch" state={state} handleClick={handleClick} />
+      {/* SimpleCounterはstateをSimpleCounter内部で別々に制御 */}
       <SimpleCounter />
       <SimpleCounter />
     </React.StrictMode>
