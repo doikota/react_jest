@@ -44,11 +44,17 @@ rules: {
 },
 ```
 
-コマンド実行
+テスト実行
 
 ```
 npm test -- -u
 npm test -- --coverage
 eslint **/*.js* -f json -o report.json
 sonar-scanner
+```
+
+アプリ実行
+
+```
+npm run dev
 ```

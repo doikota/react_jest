@@ -18,7 +18,7 @@ h1 {
   color: white; /* 文字色 */
   padding: 20px; /* 内側の余白 */
   text-align: center; /* テキストを中央揃え */
-  font-size: 3em; /* フォントサイズ */
+  font-size: 2em; /* フォントサイズ */
   box-shadow: 0 4px 2px -2px gray; /* 影の効果 */
 }
 
@@ -29,7 +29,18 @@ h2 {
   color: white; /* 文字色 */
   padding: 20px; /* 内側の余白 */
   text-align: center; /* テキストを中央揃え */
-  font-size: 3em; /* フォントサイズ */
+  font-size: 2em; /* フォントサイズ */
+  box-shadow: 0 4px 2px -2px gray; /* 影の効果 */
+}
+
+h3 {
+  border-radius: 8px;
+  margin: 0; /* マージンをリセット */
+  background-color: #ec518d; /* 背景色 */
+  color: white; /* 文字色 */
+  padding: 20px; /* 内側の余白 */
+  text-align: center; /* テキストを中央揃え */
+  font-size: 2em; /* フォントサイズ */
   box-shadow: 0 4px 2px -2px gray; /* 影の効果 */
 }
 
@@ -40,7 +51,7 @@ p {
   color: white; /* 文字色 */
   padding: 20px; /* 内側の余白 */
   text-align: center; /* テキストを中央揃え */
-  font-size: 3em; /* フォントサイズ */
+  font-size: 2em; /* フォントサイズ */
   box-shadow: 0 4px 2px -2px gray; /* 影の効果 */
 }
 
@@ -69,7 +80,7 @@ button {
   border-radius: 8px;
   border: 1px solid;
   padding: 0.6em 1.2em;
-  font-size: 5em;
+  font-size: 3em;
   font-weight: 500;
   font-family: inherit;
   background-color: white;
